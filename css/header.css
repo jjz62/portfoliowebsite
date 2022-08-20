@@ -4,11 +4,12 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 60%;
+    gap: 58%;
     position: absolute;
     width: 100%;
-    height: auto;
-    top: 20px;
+    height: 80px;
+    padding: 0;
+    top: 0;
   }
   
   #logo {
