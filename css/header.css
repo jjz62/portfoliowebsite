@@ -1,0 +1,65 @@
+nav {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 20px;
+  }
+  
+  #logo {
+    margin-left: 3%;
+    height: 50px;
+    width: auto;
+  }
+  
+  #menubuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 50px; 
+    list-style: none;
+  }
+  
+  #menubuttons * {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* @media only screen and (max-width: 1000px) {
+    #menubuttons {
+        flex-direction: column;
+    }
+  } */
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+  }
+
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #FFFFFF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

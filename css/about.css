@@ -1,0 +1,49 @@
+#background {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%);
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+#introtext {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+
+#introimage {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    right: 8%;
+    top: 22%;
+}
+
+#signature {
+    position: relative;
+    width: 320px;
+    height: auto;
+    left: 30%;
+    top: 2%;
+}
