@@ -1,0 +1,9 @@
+.headerimage {
+    position: absolute;
+    border-radius: 5px;
+    left: 5%;
+    right: 5%;
+    top: 15%;
+    width: 80%;
+    height: auto;
+}
