@@ -1,9 +1,89 @@
 .headerimage {
+    z-index: 1;
     position: absolute;
     border-radius: 5px;
-    left: 5%;
-    right: 5%;
+    left: 10%;
     top: 15%;
     width: 80%;
     height: auto;
+}
+
+#scrollingtext {
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    right: 10%;
+    width: 80;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 10px;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #25398E;
+}
+
+h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#textbox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 180px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.line {
+    width: 100%;
+    
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
 }
