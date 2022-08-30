@@ -5,7 +5,7 @@ header {
 
 nav {
   z-index: 1;
-  background-color: #070833;
+  /* background-color: #070833; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +30,7 @@ nav {
   align-items: flex-end;
   gap: 50px; 
   list-style: none;
-  margin-right: 2%;
+  margin-right: 5%;
 }
 
 #menubuttons * {
@@ -39,7 +39,7 @@ nav {
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: #161048;
 }
 
 .hover-underline-animation {

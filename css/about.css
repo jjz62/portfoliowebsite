@@ -1,11 +1,15 @@
 #background {
     z-index: 0;
     position: absolute;
-    width: 100%;
+    display: flex;
+    width: 100vw;
     height: 100%;
     left: 0px;
     top: 0px;
     right: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
     background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%);
 }
 
@@ -41,9 +45,9 @@ p {
 }
 
 #signature {
-    position: relative;
+    position: absolute;
     width: 320px;
     height: auto;
     left: 30%;
-    top: 2%;
+    top: 75%;
 }
