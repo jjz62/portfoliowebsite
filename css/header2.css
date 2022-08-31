@@ -36,16 +36,16 @@ nav {
 #menubuttons * {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   text-decoration: none;
-  color: #161048;
+  color: rgba(7, 8, 51, 0.5);
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #FFFFFF;
+  color: #070833;
 }
 
 .hover-underline-animation:after {
@@ -56,7 +56,7 @@ nav {
   height: 2px;
   bottom: -8px;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #070833;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
