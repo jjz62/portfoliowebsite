@@ -1,16 +1,13 @@
 .headerimage {
-    z-index: 1;
-    position: absolute;
-    border-radius: 5px;
-    left: 10%;
-    top: 11%;
-    width: 80%;
+    display: flex;
+    width: 100%;
     height: auto;
 }
 
 .scrollingtext {
+    z-index: 1;
     position: absolute;
-    top: 70%;
+    top: 12%;
     left: 15%;
     right: 15%;
     width: 70%;
@@ -26,14 +23,14 @@ h1 {
     font-style: normal;
     font-weight: 1000;
     font-size: 40px;
-    line-height: 10px;
+    line-height: 40px;
     color: #000000;
 }
 
 h2 {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 18px;
     color: #25398E;
 }
@@ -124,4 +121,58 @@ p {
     align-items: center;
     padding: 0px;
     gap: 50px;
+    margin-top: 5%;
+}
+
+.descriptor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 100%;
+}
+
+.iteration {
+    width: 70%;
+}
+
+ul * {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+    .imageblock {
+        flex-direction: column;
+    }
+    .iteration {
+        width: 100%;
+    }
+    .details {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .scrollingtext {
+        left: 5%;
+        right: 5%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
 }

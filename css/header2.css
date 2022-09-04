@@ -76,6 +76,21 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    z-index: 2;
+  }
+
+  #menubuttons {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    top: 200px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
