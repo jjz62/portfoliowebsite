@@ -2,12 +2,14 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden; 
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden; 
 }
 
 h1 {
@@ -48,7 +50,7 @@ h4 {
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
-  line-height: 150%;
+  line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
   color: #000000;
@@ -59,7 +61,7 @@ h5 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 100%;
   text-transform: uppercase;  
   color: #767980;
 }
@@ -125,6 +127,7 @@ a {
 
 .isolate {
   isolation: isolate;
+  position: absolute;
 }
 
 .noise {
@@ -134,7 +137,6 @@ a {
   font-size: 164px;
   line-height: 100%;
   text-align: center;
-  color: #FFFFFF;
   text-transform: uppercase;
   width: 100%;
   height: 100%;
@@ -145,8 +147,9 @@ a {
   color: transparent;
   animation-duration: 2s;
   animation-name: shimmer;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-direction: alternate;
+  filter: contrast(100%) brightness(500%);
 }
 
 .overlay {
@@ -177,6 +180,11 @@ a {
   to {
     filter: contrast(190%) brightness(130%);
   }
+}
+
+.appear {
+  background: white;
+  color: white;
 }
 
 #character1 {
@@ -223,10 +231,9 @@ a {
   cursor: pointer;
   margin: 20px;
   height: 50px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
-
   border-radius: 50px;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -295,7 +302,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .writeup {
@@ -304,6 +311,7 @@ a {
   align-items: flex-start;
   padding: 0px;
   margin: 0px;
+  border: 0px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -357,6 +365,12 @@ a {
   h3 {
     font-size: 14px;
   }
+  .noise {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 108px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -374,5 +388,10 @@ a {
   #displayimage {
     width: 100%;
   }
-
+  .noise {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+  }
 }
