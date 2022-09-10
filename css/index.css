@@ -11,10 +11,10 @@ body {
 }
 
 h1 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 124px;
+  font-weight: 650;
+  font-size: 164px;
   line-height: 30%;
   text-align: center;
   color: #FFFFFF;
@@ -22,28 +22,29 @@ h1 {
 }
 
 h2 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 500;
+  font-size: 28px;
   text-align: center;
-  line-height: 150%;
+  line-height: 100%;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 150%;
   text-align: center;
   color: white;
+  opacity: 60%;
 }
 
 h4 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -54,17 +55,17 @@ h4 {
 }
 
 h5 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 0;
+  line-height: 150%;
   text-transform: uppercase;  
   color: #767980;
 }
 
 h6 {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -73,7 +74,7 @@ h6 {
 }
 
 p {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -86,7 +87,7 @@ a {
 }
 
 .view {
-  font-family: 'Inter';
+  font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 1000;
   font-size: 18px;
@@ -106,7 +107,68 @@ a {
   right: 0px;
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%);
+  background: linear-gradient(90deg, #2F34A7 2.1%, #04052B 109.86%);
+}
+
+#section {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  left: 20%;
+  animation-duration: 3s;
+  animation-name: cube-rotate;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.isolate {
+  isolation: isolate;
+  /* position: absolute;
+  top: 15%; */
+}
+
+.noise {
+  width: 100vh;
+  padding: 8px;
+  background: linear-gradient(24deg, rgba(50 0 255/10%), CornflowerBlue), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation-duration: 2s;
+  animation-name: shimmer;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.overlay {
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .overlay {
+    opacity: 0.6;
+  }
+}
+
+@keyframes cube-rotate {
+  from {
+    transform: perspective(600px) rotate3d(0.6, 0.05, 0.2, 0deg);
+  }
+  to {
+    transform: perspective(600px) rotate3d(0.6, 0.05, 0.2, 10deg);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    filter: contrast(190%) brightness(500%);
+  }
+
+  to {
+    filter: contrast(190%) brightness(130%);
+  }
 }
 
 #character1 {
@@ -161,17 +223,18 @@ a {
 
 #scrollingscreen {
   z-index: 0;
+  top: 100%;
   margin-top: 5%;
   padding-bottom: 10%;
   background: white;
-  position: relative;
+  position: absolute;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-#projectlist {
+.projectlist {
   z-index: 1;
   margin-top: 5%;
   display: flex;
