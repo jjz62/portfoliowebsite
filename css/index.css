@@ -112,10 +112,11 @@ a {
 
 #section {
   position: absolute;
-  top: 15%;
-  right: 50%;
-  left: 20%;
-  animation-duration: 3s;
+  top: 20%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation-duration: 2s;
   animation-name: cube-rotate;
   animation-iteration-count: 2;
   animation-direction: alternate;
@@ -124,14 +125,21 @@ a {
 
 .isolate {
   isolation: isolate;
-  /* position: absolute;
-  top: 15%; */
 }
 
 .noise {
-  width: 100vh;
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 164px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
   padding: 8px;
-  background: linear-gradient(24deg, rgba(50 0 255/10%), CornflowerBlue), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background: linear-gradient(24deg, rgba(50 0 255/10%), #2F34A7), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -207,18 +215,39 @@ a {
   height: auto;
 }
 
-#down {
-  width: 20px;
-  height: auto;
-  z-index: 1;
-  position: absolute;
-  left: 48%;
-  right: auto;
-  top: 70%;
-  bottom: 30%;
-  background-color: transparent;
-  border: none;
+.btn-hover {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
+  margin: 20px;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #667eea, #2F34A7, #6B8DD6, #8E37D7);
 }
 
 #scrollingscreen {
