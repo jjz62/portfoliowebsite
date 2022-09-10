@@ -1,10 +1,8 @@
-var y = $(window).scrollTop();
-
-$(document).ready(function(){
-  $('#down').click(function(){
-    $('#landingscreen').animate({scrollTop: y + $(window).height() })
-  });
-  $("#down").click(function(){
-    $("#landingscreen").slideDown();
-  });
-})
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.project').fadeIn();
+  } else {
+    $('.project').fadeOut();
+  }
+});
