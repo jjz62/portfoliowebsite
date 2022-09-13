@@ -8,7 +8,6 @@
 
     <link href="css/project.css" rel="stylesheet">
     <link href="css/header2.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
 </head>
@@ -32,24 +31,28 @@
     
     <img class="headerimage" src="instagram/igheader.png">
 
-    <div class="block">
+    <div class="block" style="width: 100%;">
       <div>
         <h1>Let's Talk - Topic Rooms</h1>
-        <h6>An Instagram Case Study</h6>
+      </div>
+
+      <div class="specs">
+        <h2>Overview</h2>
+        <p>Integrating a live video room feature in Instagram to address user pain points.</p>
       </div>
 
       <div class="details">
         <div class="specs">
           <h2>Role</h2>
-          <h5>Sole Product Designer</h5>
+          <p>Sole Product Designer</p>
         </div>
         <div class="specs">
           <h2>Timeline</h2>
-          <h5>February 2021 - April 2021</h5>
+          <p>February 2021 - April 2021</p>
         </div>
         <div class="specs">
           <h2>Skills/Tools</h2>
-          <h5>Ideation, Prototyping, Figma</h5>
+          <p>Ideation, Prototyping, Figma</p>
         </div>
       </div>
 
@@ -57,7 +60,10 @@
     </div>
 
     <div class="block">
-      <h3>Overview</h3>
+      <div>
+        <h5>Background</h5>
+        <h3>What's Up?</h3>
+      </div>
       <p>
         The summer before freshman year, I was excited to go to college but especially desperate to find a good roommate, a search that naturally fell to online platforms like Instagram. Yet, it felt terrifying to message random girls and strike up conversation. I checked my phone constantly, stressing over a reply, stressing over why I might not have received a reply, just stress.
       </p>
@@ -71,7 +77,10 @@
     </div>
 
     <div class="block">
-      <h3>User Research</h3>
+      <div>
+        <h5>User Research</h5>
+        <h3>What do people have to say?</h3>
+      </div>
       <p>
         I conducted user research with the goal of gleaning user pain points. I found multiple insights:
       </p>
@@ -97,7 +106,10 @@
     </div>
 
     <div class="block">
-      <h3>What's the Problem?</h3>
+      <div>
+        <h5>Problem</h5>
+        <h3>What can we fix?</h3>
+      </div>
       <p>
         It is hard to stay meaningfully connected with others because...
       </p>
@@ -117,10 +129,14 @@
     </div>
 
     <div class="block">
-      <h3>Brainstorming</h3>
+      <div>
+        <h5>Brainstorming</h5>
+        <h3>Let's Think...</h3>
+      </div>
       <p>
         With a clear people problem in mind, it was time to get down to business. I assembled some friends to post-it ideas as we explored possible solution areas. In particular, we organized areas for potential and narrowed options down to 3 solution spaces:
       </p>
+      <img src="instagram/grouppic.HEIC">
       <div style="margin-bottom: 5%">
         <p>
           <b>1. Reacting Meaningfully:</b> How can we balance meaningful reactions alongside Instagram’s focus on quick interactions?
@@ -137,13 +153,17 @@
     </div>
 
     <div class="block">
-      <h3>Exploration</h3>
+      <div>
+        <h5>Ideation</h5>
+        <h3>Integrating into the Instagram Look</h3>
+      </div>
       <p>
         After deciding upon Topic Rooms came iterations, starting with possible entry points: 
       </p>
+
       <div class="imageblock">
         <div class="descriptor">
-          <h2>Entry Points</h2>
+          <h6>Entry Points</h6>
           <p>
             A was more hidden and less intuitive, while C made the bottom bar too crowded with features in a way that might be overwhelming or too busy for users.
             I thought that B would be the perfect balance between visibility and Instagram’s more minimal aesthetic.
@@ -151,19 +171,21 @@
         </div>
         <img class="iteration" src="instagram/entry.png">
       </div>
-      <div class="imageblock">
+
+      <!-- <div class="imageblock">
         <div class="descriptor">
-          <h2>Indicating Friends</h2>
+          <h6>Indicating Friends</h6>
           <p>
             I included visual indicators that a user’s mutual was inside a room.
             I selected C for its greater personalization and visual similarity to other Instagram components such as likes.
           </p>
         </div>
         <img class="iteration" src="instagram/mutualnotif.png">
-      </div>
+      </div> -->
+      
       <div class="imageblock">
         <div class="descriptor">
-          <h2>Creating a Room</h2>
+          <h6>Creating a Room</h6>
           <p>
             I designed the form to create a new room with similar actions to other Instagram UI.
             When conceptualizing the topic room, I focused on adding details and features such as the Room ID that would give users personalization options to increase comfort.
@@ -171,44 +193,62 @@
         </div>
         <img class="iteration" src="instagram/newtrbreakdown.png">
       </div>
-      <div class="imageblock">
+      <div class="imageblock2">
         <div class="descriptor">
-          <h2>New Topic Room</h2>
+          <h6>New Topic Room</h6>
           <p>
             How can we make these topic rooms further accessible to a user?
             How can we help users connect with existing connections?
             How can we give users personalization to furthur comfort?
           </p>
         </div>
-        <img class="iteration" src="instagram/newtr.png">
+        <img class="iteration2" src="instagram/newtr.png">
       </div>
-      <div class="imageblock" style="margin-bottom: 5%;">
+      <div class="imageblock2">
         <div class="descriptor">
-          <h2>Entering a Room</h2>
+          <h6>Entering a Room</h6>
           <p>
             Users have the freedom to be a Spectator or Participant.
           </p>
 
+          <div style="display: flex; flex-direction: row; width: 100%; gap: 200px; justify-content: center; margin-bottom: 2%;">
             <div>
-              <p style="font-weight: 1000;">Participants:</p>
+              <p style="font-weight: 600;">Participants:</p>
               <ul>
                 <li>Interact with other participants</li>
                 <li>Utilize audio and/or video</li>
+                <li>Real-time broadcast</li>
               </ul>
             </div>
 
             <div>
-              <p style="font-weight: 1000;">Spectators:</p>
+              <p style="font-weight: 600;">Spectators:</p>
               <ul>
                 <li>Watch broadcast</li>
                 <li>Send likes</li>
                 <li>Interact through chat</li>
               </ul>
             </div>
+          </div>
         </div>
-        <img class="iteration" src="instagram/enteringroom.png">
+        <img class="iteration2" style="margin-bottom: 5%;" src="instagram/enteringroom.png">
       </div>
       <img class="line" src="images/line.png">
+    </div>
+
+      <div class="block" style="margin-bottom: 10%;">
+        <div>
+          <h5>Conclusion</h5>
+          <h3>My first case study.</h3>
+        </div>
+        <p>
+          Instagram is a fun and enjoyable platform, but it’s also scary at times. Topic Rooms are a fun and innovative approach to making Instagram a less intimidating and more meaningful place to interact with others. Next steps for Topic Rooms could be the creation and choice between Private and Public Topic Rooms to give the user even more of a chance for customizability.
+          </p>
+        <p>
+          For a first time creating a case study, the experience was fun yet challenging. I was constantly reminded how little I truly knew as I explored different solution spaces and thought through the problem. The opportunity to immerse myself into the design cycle without pre-existing notions of a solution allowed me to tap into my creativity and problem-solving to create an organic solution!
+        </p>
+      </div>
+
     </div>
 
   </div>
