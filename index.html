@@ -10,6 +10,7 @@
     <link href="css/header.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="index.js"></script>
 
 </head>
@@ -30,22 +31,23 @@
   </header>
 
   <div id="landingscreen">
+    <div id="section">
 
     <div>
-      <div id="section">
         <div class="isolate">
           <div>
-            <h2>Hi! I'm Jenny.</h2>
+            <h2>I'm Jenny!</h2>
           </div>
             <div class="noise">
               Product Designer
             </div>
             <div>
-              <h2>+ Information Science Student @<a href="#">Cornell</a></h2>
+              <h2>Information Science Student @<a href="#">Cornell</a></h2>
               <h3>Designing @<a href="#">OpenDoorsNYC</a> @<a href="#">CornellFutureofLearningLab</a> @<a href="#">AABIX</a></h3>
             </div>
           <div class="overlay"></div>
         </div>
+       </div>
       </div>
     <img id="bubble" src="images/bubble.png">
     <div class="typing-indicator hideMe">
@@ -53,17 +55,20 @@
       <span></span>
       <span></span>
     </div>
-    <div class="socialmedia showMe">
+    <!-- <div class="socialmedia showMe">
       <a href="https://www.linkedin.com/in/jennifer-zhangjjz62/"><img src="images/linkedin.svg"></a>
       <a href="mailto:jjz62@cornell.edu"><img src="images/gmail.svg"></a>
       <a href="https://www.instagram.com/little_zhang_/"><img src="images/instagram.svg"></a>
+    </div> -->
+    <div class="socialmedia showMe">
+      <p style="color: #373D8A; font-weight: 550; font-size: 18px;">Welcome!</p>
     </div>
 
   </div>
 
   <div id="scrollingscreen">
 
-  <h2 style="font-weight: 600; color: black; font-size: 36px;">Design Projects</h2>
+  <!-- <h2 style="font-weight: 600; color: black; font-size: 36px;">Design Projects</h2> -->
 
   <div class="projectlist">
     <div class="project">
@@ -74,8 +79,9 @@
             <h5>Case Study</h5>
             <p>Researched, designed, and prototyped a potential Instagram feature.</p>
           </div>
-          <!-- <a class="view" href="instagramtopicrooms.html">View Project</a> -->
-          <button class="btn-hover color-1"><a href="instagramtopicrooms.html">View Project</a></button>
+          <a class="view" href="instagramtopicrooms.html">View Project</a>
+          <!-- <button class="btn-hover color-1"><a href="instagramtopicrooms.html">View Project</a></button> -->
+
         </div>
     </div>
 
@@ -87,7 +93,8 @@
             <h5>Cornell Future of Learning Lab</h5>
             <p>Desgined and coded a chat-based app created to conduct research studies.</p>
           </div>
-          <button class="btn-hover color-1"><a href="coacheraapp.html">View Project</a></button>
+          <a class="view" href="coacheraapp.html">View Project</a>
+          <!-- <button class="btn-hover color-1"><a href="coacheraapp.html">View Project</a></button> -->
         </div>
     </div>
 
@@ -104,7 +111,7 @@
         </div>
     </div>
 
-    <h2 style="font-weight: 600; color: black; font-size: 36px;">Coding Projects</h2>
+    <!-- <h2 style="font-weight: 600; color: black; font-size: 36px;">Coding Projects</h2> -->
 
     <div class="project">
       <img class="displayimage" src="images/coacherawebcover.png">
@@ -121,7 +128,23 @@
 
   </div>
 
-  <h6 style="margin-top: 10%; margin-bottom: 0; line-height: 0;">Thanks for scrolling! Coded with love.</h6>
+  <div class="footer">
+    <h6>Thanks for scrolling! Coded with love.</h6>
+
+    <section>
+     <ul class="icon-list">
+       <li class="icon-item">
+         <a href="https://www.instagram.com/little_zhang_/" target="_blank" class="icon-link"><i class="fa fa-instagram"></i></a>
+        </li>
+       <li class="icon-item">
+         <a href="mailto: jjz62@cornell.edu" class="icon-link"><i class="fa fa-google"></i></a>
+        </li>
+        <li class="icon-item">
+          <a href="https://www.linkedin.com/in/jennifer-zhangjjz62/" class="icon-link"><i class="fa fa-linkedin"></i></a>
+        </li>    
+      </ul>
+    </section>
+  </div>
 
 </div>
 
