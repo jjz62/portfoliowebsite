@@ -2,7 +2,7 @@ nav {
     z-index: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -13,7 +13,6 @@ nav {
   }
   
   #logo {
-    margin-left: 3%;
     height: 50px;
     width: auto;
   }
@@ -21,10 +20,9 @@ nav {
   #menubuttons {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     gap: 50px; 
     list-style: none;
-    margin-right: 5%;
   }
   
   #menubuttons * {
@@ -70,6 +68,12 @@ nav {
   }
   
   @media only screen and (max-width: 768px) {
+    #logo {
+      width: 0;
+    }
+    #menubuttons {
+      align-items: center;
+    }
   }
   
   @media only screen and (max-width: 480px) {
