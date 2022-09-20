@@ -21,7 +21,8 @@ h1 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 96px;
+    line-height: 36px;
     color: #FFFFFF;
 }
 
@@ -37,7 +38,7 @@ p {
 #introtext {
     width: 40%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 #introimage {

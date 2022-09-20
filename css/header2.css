@@ -1,14 +1,8 @@
-header {
-  margin: 0;
-  padding: 0;
-}
-
 nav {
   z-index: 1;
-  /* background-color: #070833; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -19,7 +13,6 @@ nav {
 }
 
 #logo {
-  margin-left: 3%;
   height: 50px;
   width: auto;
 }
@@ -27,10 +20,9 @@ nav {
 #menubuttons {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 50px; 
   list-style: none;
-  margin-right: 5%;
 }
 
 #menubuttons * {
@@ -76,20 +68,11 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-  nav {
-    z-index: 2;
+  #logo {
+    width: 0;
   }
-
   #menubuttons {
-    flex-direction: column;
     align-items: center;
-    background-color: white;
-    top: 200px;
-    margin-right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    gap: 30px;
   }
 }
 
