@@ -1,17 +1,14 @@
 :root {   
-    --color-icon: #535c68;  
+    --color-icon: rgba(0, 0, 0, 0.4);  
     --social-icon1: #e4405f;
     --social-icon2: #BB001B;
     --social-icon3: #0077B5;  
   }
   
   section {
-    /* width: 100%; */
-    /* margin-top: 5%; */
     display: flex;
     align-items: center;
-    justify-content: center;  
-    background: var(--bg);
+    justify-content: center;
     z-index: 10;
     margin: 0;
     padding: 0;
@@ -42,10 +39,24 @@
     height: 3rem;   
     transition: .5s linear;
     position: absolute;
-    z-index: 1;
+    z-index: 12;
     margin: 0;
     padding: 0;
   }
+
+  /* .icon-link2 {  
+    display: inline-flex;
+    font-size: 2rem;  
+    text-decoration: none;  
+    color: white;
+    width: 48px;
+    height: 48px;   
+    transition: .5s linear;
+    position: absolute;
+    z-index: 12;
+    margin: 0;
+    padding: 0;
+  } */
   
   .icon-link:hover {
     color: #fff;
@@ -68,7 +79,6 @@
     height: 3rem;
     margin: 0;
     padding: 0;
-    background: #000;
     border-radius: 50%;
     z-index: -1;
     transform: scale(0);

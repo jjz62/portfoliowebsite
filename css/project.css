@@ -68,6 +68,7 @@ h6 {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
+    line-height: 18px;
     color: #25398E;
 }
 
@@ -137,12 +138,16 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     width: 100%;
 }
 
+.descriptor * {
+    padding: 0;
+    margin: 20px;
+}
+
 .iteration {
-    width: 70%;
+    width: 60%;
 }
 
 .iteration2 {
@@ -218,3 +223,51 @@ ul * {
 @media only screen and (max-width: 480px) {
 
 }
+
+/* Footer */
+
+.footer {
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .foottext {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #767980;
+  }
+  
+  .socialmedia {
+    position: fixed;
+    bottom: 28px;
+    left: 70px;
+    z-index: 12;
+  }
+
+  .cc {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #767980;
+    text-decoration: underline;
+  }
+  
+  .cc:hover {
+    color: #373D8A;
+  }
+
+  a {
+    color: white;
+  }
