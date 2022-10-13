@@ -25,6 +25,15 @@ nav {
     gap: 80px; 
     list-style: none;
   }
+
+  #menubuttons * {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
   
   .linked {
     font-family: 'SF Pro Display', sans-serif;

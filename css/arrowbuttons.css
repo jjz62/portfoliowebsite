@@ -1,0 +1,52 @@
+.next {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.next:hover {
+    color: #1F227E;
+}
+
+.next:hover .buttontext {
+    color: #1F227E;
+}
+
+.buttontext {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    font-size: 48px;
+    line-height: 0px;
+    text-decoration: none;
+}
+
+.arrow {
+    font-size: 96px;
+    margin-top: 48px;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px;
+    gap: 40%;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.labeltext {
+    display: flex;
+    flex-direction: column;
+}
