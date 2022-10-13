@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 
 .scrollingtext {
@@ -270,4 +271,23 @@ ul * {
 
   a {
     color: white;
+  }
+
+  #scrollToTopBtn {
+    background-color: white;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.3));
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 48px;
+    width: 48px;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: black;
   }
