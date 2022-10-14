@@ -52,7 +52,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .next {
+    .block2 {
         flex-direction: column;
         gap: 20px;
     }
