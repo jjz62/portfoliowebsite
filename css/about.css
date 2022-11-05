@@ -23,7 +23,7 @@ h1 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 72px;
     line-height: 36px;
     color: #FFFFFF;
 }
@@ -41,7 +41,7 @@ p {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 350;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
     color: #FFFFFF;
 }
@@ -60,11 +60,11 @@ p {
 }
 
 #introimage {
-    position: fixed;
+    position: absolute;
     width: 500px;
     height: auto;
     right: 8%;
-    top: 15%;
+    top: 23%;
 }
 
 #signature {
