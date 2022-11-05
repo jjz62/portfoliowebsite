@@ -146,7 +146,7 @@ a {
         rgba(85, 52, 174, 1) 51%, 
         rgba(214, 89, 95, 1) 100%
   );  
-  animation: AnimateBG 12s ease infinite;
+  animation: AnimateBG 8s ease infinite;
 }
 
 @keyframes AnimateBG { 
