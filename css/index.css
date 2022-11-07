@@ -242,7 +242,7 @@ a {
 }
 
 #bubble {
-  width: 120px;
+  width: 140px;
   height: auto;
   z-index: 5;
   position: fixed;
@@ -252,8 +252,8 @@ a {
 
 .socialmedia {
   position: fixed;
-  bottom: 25px;
-  left: 60px;
+  bottom: 30px;
+  left: 65px;
   z-index: 12;
 }
 
@@ -420,8 +420,8 @@ a {
 
 .typing-indicator {
   position: fixed;
-  bottom: 50px;
-  left: 72px;
+  bottom: 53px;
+  left: 82px;
   z-index: 7;
 }
 
