@@ -19,17 +19,98 @@
     min-height: 100vh;
 }
 
+*, *::before, *::after{
+    -webkit-box-sizing:padding-box;
+    box-sizing:padding-box;
+  }
+  
+  .tickerwrapper {
+    /* the outer div */
+    
+    position: relative;
+    top: 30px;
+    left:0%;
+    width: 99.9%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  ul.list {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  
+  ul.list.cloned {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+  ul.list li {
+    float: left;
+    padding-left: 20px;
+  }
+
 #intro {
     gap: 100px;
     width: 100%;
+    align-items: center;
 }
+
+#scroll-container {
+    /* border: 3px solid black;
+    border-radius: 5px; */
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    text-align: center;
+  
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -moz-animation: my-animation 10s linear infinite;
+    -webkit-animation: my-animation 10s linear infinite;
+    animation: my-animation 10s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
 
 h1 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 60px;
+    font-size: 164px;
+    line-height: 10px;
     color: #000000;
 }
 
@@ -227,36 +308,6 @@ ul * {
 
   #scrollToTopBtn:hover {
     background-color: black;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-  .column2 {
-    flex: 49%;
-    max-width: 49%;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 24%;
-    max-width: 24%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  #gallery {
-    display: flex;
-    top: 30%;
   }
 
   .footer {
