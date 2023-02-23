@@ -44,6 +44,15 @@ h2 {
   color: #FFFFFF;
 }
 
+h4 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
 h5 {
   font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
@@ -100,6 +109,18 @@ p {
 
 .opacity {
   opacity: 60%;
+}
+
+.interests {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 3%;
+}
+
+.interests * {
+  width: 100%;
 }
 
 #textsignature {
