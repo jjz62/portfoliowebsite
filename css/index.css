@@ -58,7 +58,6 @@ h2 {
   text-align: center;
   line-height: 100%;
   color: #FFFFFF;
-  text-transform: capitalize;
 }
 
 h3 {
@@ -175,7 +174,7 @@ a {
 
 #section {
   position: absolute;
-  top: 13%;
+  top: 16%;
   right: 0;
   width: 100%;
   height: 100%;
@@ -197,8 +196,8 @@ a {
   font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 650;
-  font-size: 164px;
-  line-height: 100%;
+  font-size: 124px;
+  line-height: 90%;
   text-align: center;
   width: 100%;
   height: 100%;
