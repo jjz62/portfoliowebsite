@@ -11,21 +11,6 @@ html, body {
     z-index: 0;
 }
 
-/* #background {
-    z-index: 0;
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%);
-} */
-
 h1 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
@@ -133,7 +118,7 @@ p {
 #introtext {
     width: 40%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 #introimage {
@@ -141,7 +126,7 @@ p {
     width: 500px;
     height: auto;
     right: 8%;
-    top: 23%;
+    top: 16%;
     border-radius: 20px;
 }
 
