@@ -210,12 +210,12 @@ a {
 }
 
 #empathy:hover:before {
-  content: "Stepping into a user's shoes and listening.";
+  content: "Listening and considering rather over assumptions.";
   font-size: 52px;
 }
 
 #simplicity:hover:before {
-  content: "Function over form to create easy experiencs.";
+  content: "Function over form to create easy experiences.";
   font-size: 52px;
 }
 
