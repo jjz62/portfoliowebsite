@@ -1,6 +1,13 @@
 html, body {
     overflow-x: hidden;
-    background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%);
+    /* background: linear-gradient(90deg, #1F227E 2.1%, #04052B 109.86%); */
+    background-image: linear-gradient(
+        -45deg, 
+        rgba(8, 10, 56, 1) 0%, 
+        rgba(47, 52, 166, 1) 25%, 
+        rgba(85, 52, 174, 1) 51%, 
+        rgba(214, 89, 95, 1) 100%
+  );  
     z-index: 0;
 }
 
@@ -28,6 +35,24 @@ h1 {
     color: #FFFFFF;
 }
 
+h2 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+h5 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
 h6 {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
@@ -41,9 +66,40 @@ p {
     font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: 350;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 150%;
     color: #FFFFFF;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10%;
+  width: 80%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.experience * {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.opacity {
+  opacity: 60%;
 }
 
 #textsignature {
@@ -65,6 +121,7 @@ p {
     height: auto;
     right: 8%;
     top: 23%;
+    border-radius: 20px;
 }
 
 #signature {
