@@ -192,7 +192,7 @@ a {
   align-items: center;
 }
 
-.noise {
+#empathy, #simplicity, #consistency {
   font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 650;
@@ -203,15 +203,25 @@ a {
   height: 100%;
   padding: 8px;
   color: white;
-  /* background: linear-gradient(24deg, rgba(50 0 255/10%), #703B9E), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 310' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation-duration: 4s;
-  animation-name: shimmer;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  filter: contrast(100%) brightness(500%); */
+}
+
+#empathy:hover span, #simplicity:hover span, #consistency:hover span {
+  display: none;
+}
+
+#empathy:hover:before {
+  content: "Stepping into a user's shoes and listening.";
+  font-size: 52px;
+}
+
+#simplicity:hover:before {
+  content: "Function over form to create easy experiencs.";
+  font-size: 52px;
+}
+
+#consistency:hover:before {
+  content: "Scalable design to create trust through brand identity.";
+  font-size: 52px;
 }
 
 .overlay {
