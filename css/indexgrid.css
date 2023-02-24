@@ -335,14 +335,9 @@ a {
 
 #view_buttons {
   display: flex;
-  width: 90%;
   flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-#view_buttons * {
-  font-size: 16px;
+  justify-content: center;
+  gap: 40px;
 }
 
 .projectlist {
@@ -358,10 +353,28 @@ a {
   width: 80%;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#view_buttons {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#view_buttons * {
+  font-size: 16px;
+}
+
 .project, .project_pending {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
@@ -372,7 +385,7 @@ a {
 }
 
 .displayimage, .displayimage_pending {
-  width: 48%;
+  width: 100%;
   height: auto;
   /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
   transition: all .3s ease-in-out; */
@@ -448,7 +461,7 @@ a {
 
 
 .footer {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 80%;
   display: flex;
   flex-direction: column;
